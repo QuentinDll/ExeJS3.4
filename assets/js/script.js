@@ -1,14 +1,12 @@
-function validationPassword(id){
+function validationPassword(){
+  var password = document.getElementById('password');
+  var confirmPassword = document.getElementById('confirmPassword');
 
   if(password.value == confirmPassword.value){
-
-    document.getElementById('password').style.borderColor = 'green';
-    document.getElementById('confirmPassword').style.borderColor = 'green';
-
+    password.style.borderColor = 'green';
+    confirmPassword.style.borderColor = 'green';
   }else{
-
-    document.getElementById('password').style.borderColor = 'red';
-    document.getElementById('confirmPassword').style.borderColor = 'red';
-
+    password.style.borderColor = 'red';
+    confirmPassword.style.borderColor = 'red';
   }
 }
